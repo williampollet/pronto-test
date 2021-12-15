@@ -42,9 +42,14 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'rspec-rails', '>= 3.8.2'
 end
 
 group :test do
+  gem 'rspec-rails', '>= 3.8.2'
+  gem 'simplecov', require: false
+
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
